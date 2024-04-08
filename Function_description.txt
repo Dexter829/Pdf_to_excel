@@ -1,0 +1,7 @@
+extract_info(cv_text): This function takes in the text content of a CV as an argument and extracts email IDs, contact numbers, and the overall text from the CV. It uses regular expressions to find email addresses and contact numbers. The function returns a tuple containing the list of email addresses, the list of contact numbers, and the full text of the CV.
+
+extract_text_from_pdf(file): This function takes in an uploaded PDF file as an argument and extracts the text from the PDF. It reads the file into bytes, opens the PDF using the fitz module, and then iterates over each page in the PDF to extract the text. The function returns the extracted text as a string.
+
+extract_text_from_docx(file): This function takes in an uploaded DOCX file as an argument and extracts the text from the DOCX. It opens the DOCX using the docx module and then iterates over each paragraph in the DOCX to extract the text. The function returns the extracted text as a string.
+
+download_xlsx(data): This function takes in a list of lists containing extracted information for each CV as an argument. It creates an Excel workbook with the extracted information and saves it as “extracted_info.xlsx”. If the workbook is successfully saved, a success message is displayed.
